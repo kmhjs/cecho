@@ -1,23 +1,23 @@
-# cecho
+# color_echo
 
 This script appends `--color` / `-c` option for `echo` .
 
 ## Usage
 
-1. Source `cecho.zsh` .
-2. Use as `cecho --color red "string"` etc.
+1. Source `color_echo.zsh` .
+2. Use as `color_echo --color red "string"` etc.
 
 ```
-cecho [-c color_name]      [-n] "[string]"
-cecho [--color color_name] [-n] "[string]"
+color_echo [-c color_name]      [-n] "[string]"
+color_echo [--color color_name] [-n] "[string]"
 ```
 
 ### (Option) autoload
 
 In your `.zshrc` etc.
 
-1. Add load path to `fpath` as `fpath+=(path/to/cecho)` .
-2. Load with autoload as `autoload -Uz cecho` .
+1. Add load path to `fpath` as `fpath+=(path/to/color_echo)` .
+2. Load with autoload as `autoload -Uz color_echo` .
 
 ## Options
 
@@ -48,19 +48,19 @@ Following color name could be specified for this option.
 Show `a b c d e` with red color.
 
 ```
-cecho -c red 'a b c d e'
+color_echo -c red 'a b c d e'
 ```
 
 Show the result of `ls` with green color.
 
 ```
-cecho -c green "$(ls)"
+color_echo -c green "$(ls)"
 ```
 
 ## Note
 
 "string" part must be given as one string.  
-For example, `cecho --color red "$(ls)"` .
+For example, `color_echo --color red "$(ls)"` .
 
 ## License
 

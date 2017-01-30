@@ -1,6 +1,7 @@
 #! /usr/bin/env zsh -f
 
-source './cecho.zsh'
+typeset script_path=$(dirname $0)
+source "${script_path}/../color_echo.zsh"
 
 typeset -a color_tokens=(
   black
@@ -25,7 +26,7 @@ typeset -a color_tokens=(
 foreach color (${color_tokens})
 do
   echo -n '['
-  cecho -n -c ${color} "■"
+  color_echo -n -c ${color} "■"
   echo -n ']'
 done
 
@@ -35,5 +36,5 @@ echo ''
 foreach color (${color_tokens})
 do
   printf "%15s > " ${color}
-  cecho -c ${color} "${color}"
+  color_echo -c ${color} "${color}"
 done
