@@ -12,6 +12,13 @@ cecho [-c color_name]      [-n] "[string]"
 cecho [--color color_name] [-n] "[string]"
 ```
 
+### (Option) autoload
+
+In your `.zshrc` etc.
+
+1. Add load path to `fpath` as `fpath+=(path/to/cecho)` .
+2. Load with autoload as `autoload -Uz cecho` .
+
 ## Options
 
 Only `-c` or `--color` (long form of `-c` option) additional option for `echo` command is available.  
