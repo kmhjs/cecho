@@ -5,19 +5,19 @@
 #    This script appends --color/-c option for echo.
 #
 # - Usage:
-#    cecho [-c color_name]      [-n] "[string]"
-#    cecho [--color color_name] [-n] "[string]"
+#    color_echo [-c color_name]      [-n] "[string]"
+#    color_echo [--color color_name] [-n] "[string]"
 #
 # - Note:
 #    "string" part must be given as one string.
-#    For example, `cecho --color red "$(ls)"` .
+#    For example, `color_echo --color red "$(ls)"` .
 #
 # - Info:
 #    Available color names:
 #        black, red, green, yellow, blue, magenta, cyan, white
 #        black_bold_bold, red_bold, green_bold, yellow_bold, blue_bold, magenta_bold, cyan_bold, white_bold
 #
-function cecho()
+function color_echo()
 {
   local -a args=($*)
 
